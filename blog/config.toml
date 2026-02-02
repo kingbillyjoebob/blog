@@ -1,0 +1,101 @@
+baseURL = 'https://kingbillyjoebob.github.io/'
+languageCode = 'en-us'
+title = 'Caleb Bradford'
+theme = "hugo-theme-stack"
+
+# -----------------------------
+# Main Menu
+# -----------------------------
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    wieght = 1
+
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    wieght = 2
+
+
+  [[menu.main]]
+    name = "Projects"
+    url = "/projects/"
+    wieght = 3
+
+
+  [[menu.main]]
+    name = "Jokes"
+    url = "/jokes/"
+    wieght = 4
+
+
+# -----------------------------
+# Stack Theme Parameters
+# -----------------------------
+[params]
+
+  #Light/Dark Mode
+  #colorScheme = "auto" # auto/light/dark
+  # Show section count on sidebar
+  mainSections = ["posts"]
+
+ 
+  # -----------------------------
+  # Sidebar
+  # -----------------------------
+  [params.sidebar]
+    emoji = "🏎️"
+    subtitle = "Engineer and Lifelong Learner"
+    avatar = "img/avatar.png"
+
+#    [params.sidebar.avatar]
+#      enabled = true
+#      local = true
+#      src = "img/avatar.png"
+
+  # -----------------------------
+  # Article Settings
+  # -----------------------------
+  [params.article]
+    toc = true # table of contents
+    readingTime = true
+    math = false
+  
+  # -----------------------------
+  # Search
+  # -----------------------------
+  [params.search]
+    search = true
+  
+  # -----------------------------
+  # Footer
+  # -----------------------------
+  [params.footer]
+    since = 2026
+ 
+# -----------------------------
+# Social Links
+# -----------------------------
+[[params.social]]
+  name = "GitHub"
+  url = "https://github.com/kingbillyjoebob"
+
+[[params.social]]
+  name = "LinkedIn"
+  url = "https://www.linkedin.com/in/caleb-bradford-engineer/"
+
+
+# -----------------------------
+# Markup settings
+# -----------------------------
+[markup]
+
+  [markup.goldmark.renderer]
+    unsafe = true
+
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
